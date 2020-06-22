@@ -15,6 +15,8 @@ module AtmModel
   ! called by Cap
   public :: AtmInit, AtmRun, AtmFinal
 
+  logical, public :: use_bulk_formular_internal = .true.
+
   character(len=*),parameter :: u_FILE_u = &
      __FILE__
 
@@ -127,6 +129,13 @@ module AtmModel
      hbak = hfwd
      ! get new forcing data---always fills the _fwd values in AtmBundle
      call AtmForce(gcomp,exportState,externalClock,1,rc)
+     !-lhc : here bulk formula
+     if ( use_bulk_formular_internal ) then
+     write(msgString,*) 'Srat bulk formula in AtmModel - AtmRun'
+     
+
+     endif
+
     endif
     ! get the current time of the model clock
     call ESMF_ClockGet(externalClock, currTime=currTime, rc=rc)
