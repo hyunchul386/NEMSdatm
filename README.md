@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NEMSdatm
 
 This is a data atmosphere model for NEMS applications.
@@ -10,6 +11,11 @@ The top level directory structure groups source code and input files as follow:
 | --------------       | ------- |
 | ```DATM```           | DATM fortran source code |  
 | ```tools```          | Includes nemsio to netcdf conversion tool |
+=======
+# DATM-MOM6-CICE5
+
+This is a NEMS coupled model for the DATM, MOM6 and CICE5 
+>>>>>>> def70e4a289606012744493e64e354113c797142
 
 # Disclaimer
 

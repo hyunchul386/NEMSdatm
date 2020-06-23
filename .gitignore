@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 **/*.o
 **/*.a
 **/*.mod
 DATM/datm.mk
 DATM_INSTALL
+=======
+utilities/gen_scrip/*.skl
+utilities/gen_scrip/*.nc
+>>>>>>> def70e4a289606012744493e64e354113c797142
