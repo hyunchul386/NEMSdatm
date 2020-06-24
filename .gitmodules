@@ -1,0 +1,5 @@
+[submodule "DATM"]
+  path = DATM
+  url = https://github.com/hyunchul386/NEMSdatm
+  branch = feature/bulkflux
+
